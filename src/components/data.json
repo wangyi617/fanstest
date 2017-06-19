@@ -1,0 +1,97 @@
+[
+  {
+    "question_id": 1,
+    "type": "text",
+    "level": 1,
+    "question": "题目一",
+    "answer": [{
+      "answer_name": "答案aaaa",
+      "is_standard_answer": 0
+    }, {
+      "answer_name": "答案bbbb",
+      "is_standard_answer": 0
+    }, {
+      "answer_name": "答案cccc",
+      "is_standard_answer": 0
+    }, {
+      "answer_name": "答案dddd",
+      "is_standard_answer": 1
+    }]
+  },
+  {
+    "question_id": 2,
+    "type": "text",
+    "level": 2,
+    "question": "题目二",
+    "answer": [{
+      "answer_name": "答案aaa",
+      "is_standard_answer": 1
+    }, {
+      "answer_name": "答案bbb",
+      "is_standard_answer": 0
+    }, {
+      "answer_name": "答案ccc",
+      "is_standard_answer": 0
+    }, {
+      "answer_name": "答案ddd",
+      "is_standard_answer": 0
+    }]
+  },
+  {
+    "question_id": 3,
+    "type": "text",
+    "level": 2,
+    "question": "题目三",
+    "answer": [{
+      "answer_name": "答案aa",
+      "is_standard_answer": 0
+    }, {
+      "answer_name": "答案bb",
+      "is_standard_answer": 1
+    }, {
+      "answer_name": "答案cc",
+      "is_standard_answer": 0
+    }, {
+      "answer_name": "答案dd",
+      "is_standard_answer": 0
+    }]
+  },
+  {
+    "question_id": 4,
+    "type": "text",
+    "level": 2,
+    "question": "题目四",
+    "answer": [{
+      "answer_name": "答案aa",
+      "is_standard_answer": 0
+    }, {
+      "answer_name": "答案bb",
+      "is_standard_answer": 1
+    }, {
+      "answer_name": "答案cc",
+      "is_standard_answer": 0
+    }, {
+      "answer_name": "答案dd",
+      "is_standard_answer": 0
+    }]
+  },
+  {
+    "question_id": 5,
+    "type": "text",
+    "level": 2,
+    "question": "题目五",
+    "answer": [{
+      "answer_name": "答案aa",
+      "is_standard_answer": 0
+    }, {
+      "answer_name": "答案bb",
+      "is_standard_answer": 1
+    }, {
+      "answer_name": "答案cc",
+      "is_standard_answer": 0
+    }, {
+      "answer_name": "答案dd",
+      "is_standard_answer": 0
+    }]
+  }
+]
