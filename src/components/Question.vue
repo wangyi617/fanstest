@@ -1,8 +1,9 @@
 <template>
   <div>
-    <p>{{current}}/{{total}}</p>
-    <div v-for="(q, index) in list" :key="q.question_id">
-      <item :q="q" v-show="index === current - 1" v-on:right="next(true)" v-on:wrong="next(false)"></item>
+    <h2>第 {{current}}/{{total}} 题</h2>
+    <div class="time">{{time}}</div>
+    <div class="question" v-for="(q, index) in list" :key="q.question_id" :class="q.type">
+      <item :q="q" v-show="index === current - 1" v-on:right="next(true)" v-on:wrong="next(false)" class="animated fadeIn"></item>
     </div>
   </div>
 </template>
@@ -22,6 +23,8 @@ export default {
       total: data.length,
       current: 1,
       score: 0,
+      time: 5,
+      timeInterval: null,
     };
   },
   methods: {
@@ -34,11 +37,71 @@ export default {
       } else {
         this.$router.replace({ name: 'Score', params: { score: this.score } });
       }
+      clearInterval(this.timeInterval);
+      this.time = 5;
+      this.timeInterval = setInterval(() => { this.time -= 1; }, 1000);
+    },
+  },
+  created() {
+    this.timeInterval = setInterval(() => { this.time -= 1; }, 1000);
+  },
+  watch: {
+    time(value) {
+      if (value <= 0) {
+        clearInterval(this.timeInterval);
+        this.$router.replace({ name: 'Score', params: { score: this.score } });
+      }
     },
   },
 };
 </script>
 
 <style scope>
-
+  h2 {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+  }
+  .time {
+    float: right;
+    position: fixed;
+    right: 1rem;
+    top: .5rem;
+    color: #FF3030;
+    font-weight: bold;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    background: url(../images/bell.png) no-repeat;
+    background-size: 100% 100%;
+  }
+  .question {
+    margin: 1rem auto 0 auto;
+    font-size: 1rem;
+  }
+  .question.text {
+    width: 80%;
+  }
+  .pop {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .pop .bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #333;
+    opacity: .7;
+    z-index: 0;
+  }
+  .pop img {
+    width: 80%;
+    height: 60%;
+    margin-top: 10%;
+    z-index: 10;
+  }
 </style>

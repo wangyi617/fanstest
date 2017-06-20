@@ -5,7 +5,7 @@
     "level": 1,
     "question": "题目一",
     "answer": [{
-      "answer_name": "答案aaaa",
+      "answer_name": "答案aaaa答案aaaa答案aaaa答案aaaa答案aaaa答案aaaa答案aaaa答案aaaa答案aaaa答案aaaa答案aaaa答案aaaa答案aaaa答案aaaa答案aaaa",
       "is_standard_answer": 0
     }, {
       "answer_name": "答案bbbb",
@@ -20,20 +20,20 @@
   },
   {
     "question_id": 2,
-    "type": "text",
+    "type": "img",
     "level": 2,
     "question": "题目二",
     "answer": [{
-      "answer_name": "答案aaa",
+      "answer_name": "http://10.16.28.122:8000/1.jpg",
       "is_standard_answer": 1
     }, {
-      "answer_name": "答案bbb",
+      "answer_name": "http://10.16.28.122:8000/2.jpg",
       "is_standard_answer": 0
     }, {
-      "answer_name": "答案ccc",
+      "answer_name": "http://10.16.28.122:8000/3.jpg",
       "is_standard_answer": 0
     }, {
-      "answer_name": "答案ddd",
+      "answer_name": "http://10.16.28.122:8000/4.jpg",
       "is_standard_answer": 0
     }]
   },

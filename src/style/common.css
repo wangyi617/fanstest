@@ -10,11 +10,7 @@ body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, l
     font-weight: lighter;
     font-family: 'Microsoft YaHei';
     -webkit-tap-highlight-color:transparent;
-    /*&:focus {
-        outline: none;
-    }*/
 }
-
 
 html{
     height: 100%;
@@ -23,7 +19,7 @@ html{
 body{
     height: 100%;
     width: 100%;
-    /*background: url(../assets/logo.png) no-repeat;*/
+    background: url(../images/bg.jpg);
     background-size: 100% 100%;
 }
 

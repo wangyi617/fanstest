@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import 'animate.css/animate.min.css';
 import App from './App';
 import router from './router';
 import './style/common.css';

@@ -1,7 +1,7 @@
 <template>
-  <div class="bg">
-    <h1>fanstest</h1>
-    <router-link to="question">Begin</router-link>
+  <div>
+    <h1 class="animated swing">fanstest</h1>
+    <router-link to="question" class="link animated bounceIn">开始挑战</router-link>
   </div>
 </template>
 
@@ -19,9 +19,18 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   h1 {
-    text-align: center;
+    padding: 2rem 0;
+    font-size: 1.6rem;
   }
-  .bg {
-    /*background: url('./assets/4.jpg') no-repeat;*/
+  .link {
+    display: inline-block;
+    width: 40%;
+    background: #00BFFF;
+    padding: .4rem;
+    border-radius: 8px;
+    position: absolute;
+    left: 30%;
+    bottom: 15%;
+    font-weight: bold;
   }
 </style>
