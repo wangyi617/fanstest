@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>第 {{current}}/{{total}} 题</h2>
+    <h2 class="progress">第 {{current}}/{{total}} 题</h2>
     <div class="time">{{time}}</div>
     <div class="question" v-for="(q, index) in list" :key="q.question_id" :class="q.type">
       <item :q="q" v-show="index === current - 1" v-on:right="next(true)" v-on:wrong="next(false)" class="animated fadeIn"></item>
@@ -23,23 +23,25 @@ export default {
       total: data.length,
       current: 1,
       score: 0,
-      time: 5,
+      time: 10,
       timeInterval: null,
     };
   },
   methods: {
     next(flag) {
+      clearInterval(this.timeInterval);
       if (flag) {
         this.score += 1;
       }
-      if (this.current < this.total) {
-        this.current += 1;
-      } else {
-        this.$router.replace({ name: 'Score', params: { score: this.score } });
-      }
-      clearInterval(this.timeInterval);
-      this.time = 5;
-      this.timeInterval = setInterval(() => { this.time -= 1; }, 1000);
+      setTimeout(() => {
+        if (this.current < this.total) {
+          this.current += 1;
+        } else {
+          this.$router.replace({ name: 'Score', params: { score: this.score } });
+        }
+        this.time = 10;
+        this.timeInterval = setInterval(() => { this.time -= 1; }, 1000);
+      }, 200);
     },
   },
   created() {
@@ -57,7 +59,7 @@ export default {
 </script>
 
 <style scope>
-  h2 {
+  .progress {
     padding-top: 1rem;
     font-size: 1.2rem;
   }
@@ -75,8 +77,10 @@ export default {
     background-size: 100% 100%;
   }
   .question {
-    margin: 1rem auto 0 auto;
+    margin: 2rem auto 0 auto;
     font-size: 1rem;
+    background: url(../images/blackboard.jpg) no-repeat;
+    background-size: 100% 100%;
   }
   .question.text {
     width: 80%;

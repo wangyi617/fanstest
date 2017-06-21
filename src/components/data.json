@@ -3,75 +3,75 @@
     "question_id": 1,
     "type": "text",
     "level": 1,
-    "question": "题目一",
+    "question": "生日是？",
     "answer": [{
-      "answer_name": "答案aaaa答案aaaa答案aaaa答案aaaa答案aaaa答案aaaa答案aaaa答案aaaa答案aaaa答案aaaa答案aaaa答案aaaa答案aaaa答案aaaa答案aaaa",
+      "answer_name": "12月4日",
       "is_standard_answer": 0
     }, {
-      "answer_name": "答案bbbb",
+      "answer_name": "12月24日",
       "is_standard_answer": 0
     }, {
-      "answer_name": "答案cccc",
+      "answer_name": "1月4日",
       "is_standard_answer": 0
     }, {
-      "answer_name": "答案dddd",
+      "answer_name": "1月24日",
       "is_standard_answer": 1
     }]
   },
   {
     "question_id": 2,
-    "type": "img",
-    "level": 2,
-    "question": "题目二",
+    "type": "text",
+    "level": 1,
+    "question": "应援色是？",
     "answer": [{
-      "answer_name": "http://10.16.28.122:8000/1.jpg",
+      "answer_name": "粉",
+      "is_standard_answer": 0
+    }, {
+      "answer_name": "白",
       "is_standard_answer": 1
     }, {
-      "answer_name": "http://10.16.28.122:8000/2.jpg",
+      "answer_name": "黄",
       "is_standard_answer": 0
     }, {
-      "answer_name": "http://10.16.28.122:8000/3.jpg",
-      "is_standard_answer": 0
-    }, {
-      "answer_name": "http://10.16.28.122:8000/4.jpg",
+      "answer_name": "橙",
       "is_standard_answer": 0
     }]
   },
   {
     "question_id": 3,
     "type": "text",
-    "level": 2,
-    "question": "题目三",
+    "level": 1,
+    "question": "《我的太阳》中的unit曲是？",
     "answer": [{
-      "answer_name": "答案aa",
-      "is_standard_answer": 0
-    }, {
-      "answer_name": "答案bb",
+      "answer_name": "专属偶像",
       "is_standard_answer": 1
     }, {
-      "answer_name": "答案cc",
+      "answer_name": "朱丽叶",
       "is_standard_answer": 0
     }, {
-      "answer_name": "答案dd",
+      "answer_name": "暮蝉之恋",
+      "is_standard_answer": 0
+    }, {
+      "answer_name": "爱到累了",
       "is_standard_answer": 0
     }]
   },
   {
     "question_id": 4,
     "type": "text",
-    "level": 2,
-    "question": "题目四",
+    "level": 1,
+    "question": "《第一人称》中的unit曲是？",
     "answer": [{
-      "answer_name": "答案aa",
-      "is_standard_answer": 0
-    }, {
-      "answer_name": "答案bb",
+      "answer_name": "精灵",
       "is_standard_answer": 1
     }, {
-      "answer_name": "答案cc",
+      "answer_name": "粉红狙击手",
       "is_standard_answer": 0
     }, {
-      "answer_name": "答案dd",
+      "answer_name": "上下左右",
+      "is_standard_answer": 0
+    }, {
+      "answer_name": "暴走少女",
       "is_standard_answer": 0
     }]
   },
@@ -79,19 +79,57 @@
     "question_id": 5,
     "type": "text",
     "level": 2,
-    "question": "题目五",
+    "question": "在三选拉票会上铃铛自称像一个",
     "answer": [{
-      "answer_name": "答案aa",
+      "answer_name": "推销的",
       "is_standard_answer": 0
     }, {
-      "answer_name": "答案bb",
+      "answer_name": "小学生",
+      "is_standard_answer": 0
+    }, {
+      "answer_name": "卖保险的",
       "is_standard_answer": 1
     }, {
-      "answer_name": "答案cc",
+      "answer_name": "大老板",
+      "is_standard_answer": 0
+    }]
+  },
+  {
+    "question_id": 6,
+    "type": "text",
+    "level": 2,
+    "question": "恩穗中铃铛的儿子是？",
+    "answer": [{
+      "answer_name": "兔子",
       "is_standard_answer": 0
     }, {
-      "answer_name": "答案dd",
+      "answer_name": "虹姐",
       "is_standard_answer": 0
+    }, {
+      "answer_name": "嘉欣",
+      "is_standard_answer": 1
+    }, {
+      "answer_name": "闹闹",
+      "is_standard_answer": 0
+    }]
+  },
+  {
+    "question_id": 7,
+    "type": "text",
+    "level": 2,
+    "question": "在SNH48中铃铛最喜欢的前辈是",
+    "answer": [{
+      "answer_name": "源源",
+      "is_standard_answer": 0
+    }, {
+      "answer_name": "珍妮",
+      "is_standard_answer": 0
+    }, {
+      "answer_name": "水水",
+      "is_standard_answer": 0
+    }, {
+      "answer_name": "天草",
+      "is_standard_answer": 1
     }]
   }
 ]
