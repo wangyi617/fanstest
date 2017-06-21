@@ -3,7 +3,7 @@
     <h2 class="progress">第 {{current}}/{{total}} 题</h2>
     <div class="time">{{time}}</div>
     <div class="question" v-for="(q, index) in list" :key="q.question_id" :class="q.type">
-      <item :q="q" v-show="index === current - 1" v-on:right="next(true)" v-on:wrong="next(false)" class="animated fadeIn"></item>
+      <item :q="q" v-show="index === current - 1" v-on:choose="next" class="animated fadeIn"></item>
     </div>
   </div>
 </template>

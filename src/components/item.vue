@@ -26,10 +26,10 @@ export default {
     choose(flag, event) {
       if (flag) {
         event.currentTarget.classList.add('green-border');
-        this.$emit('right');
+        this.$emit('choose', true);
       } else {
         event.currentTarget.classList.add('red-border');
-        this.$emit('wrong');
+        this.$emit('choose', false);
       }
     },
   },

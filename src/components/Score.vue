@@ -3,9 +3,9 @@
     <h1 class="animated bounceInDown">你的得分</h1>
     <p class="big animated bounceInDown">{{score}}</p>
     <img :src="resultImage" alt="铃铛" class="result-img animated zoomIn">
-    <p class="tip animated bounceInDown">{{resultMessage}}</p>
+    <p class="tip animated bounceInUp">{{resultMessage}}</p>
     <router-link to="/" class="again animated bounceInUp">再试一次</router-link>
-    <a class="share animated bounceInUp" href="http://service.weibo.com/share/share.php?title=来试试吧&url=&searchPic=false&style=simple" target="_blank">
+    <a class="share animated bounceInUp" :href="url" target="_blank">
       <img src="../images/share.gif" alt="wechat">
     </a>
   </div>
@@ -19,6 +19,7 @@ export default {
   data() {
     return {
       score: this.$route.params.score,
+      url: `http://service.weibo.com/share/share.php?title=我刚刚参与了《关于肖文铃的100件小事》挑战，获得了${this.$route.params.score}分，你也来试试吧！&url=http://xiaowenling.github.io&searchPic=false&style=simple`,
     };
   },
   computed: {
